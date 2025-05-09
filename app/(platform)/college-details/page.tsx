@@ -1,5 +1,4 @@
 import {
-  Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
   BreadcrumbList,
@@ -91,12 +90,12 @@ export default function CollegeDetails() {
           <h1 className="text-3xl font-bold">About</h1>
 
           <p className=" text-md tracking-wide">
-            At Adelphi, you'll get the best of both worlds: a close-knit,
-            engaged community on a beautiful and safe campus that's just 23
+            At Adelphi, you &apos; ll get the best of both worlds: a close-knit,
+            engaged community on a beautiful and safe campus that&apos;s just 23
             miles from all the excitement and opportunities New York City has to
             offer. Choose from more than 75 undergraduate programs in arts and
             humanities, STEM and social sciences, the business and education
-            professions, and health and wellness. You'll benefit from
+            professions, and health and wellness. You&apos;ll benefit from
             individualized attention from professors who will know you by name
             and find opportunities for you to participate in hands-on learning
             and research.
