@@ -1,7 +1,9 @@
 import Navbar from "./_components/navbar";
 import { Montserrat } from "next/font/google";
 
-const montserrat = Montserrat({});
+const montserrat = Montserrat({
+  subsets:["cyrillic"]
+});
 
 export default function PlatformLayout({
   children,
