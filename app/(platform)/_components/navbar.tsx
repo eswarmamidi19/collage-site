@@ -6,13 +6,13 @@ import { GraduationCap, Menu, X, UserCircle2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 // Simulated auth (replace with real auth logic)
-const user = {
-  name: "John Doe", // if null or undefined → not logged in
-}
+// const user = {
+//   name: "John Doe", // if null or undefined → not logged in
+// }
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [loggedIn, _] = useState(false);
+  const [loggedIn] = useState(false);
   const user = loggedIn ? { name: "John Doe" } : null; // Simulated user state
    const navLinks = [
     { href:"/college-list" , label : "Colleges" },
