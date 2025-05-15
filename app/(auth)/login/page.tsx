@@ -26,7 +26,7 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-50 to-white px-4 ">
+    <div className="min-h-screen flex items-center justify-center ">
       <div className="w-full max-w-md bg-white p-8 rounded-2xl shadow-xl">
         <div className="flex flex-col items-center mb-6">
           <div className="bg-sky-100 text-sky-600 rounded-full p-3 mb-4">
@@ -82,7 +82,7 @@ export default function LoginPage() {
         <p className="text-sm text-center mt-6">
           Don&apos;t have an account?{" "}
           <Link href="/create-account" className="text-sky-600 hover:underline">
-            Sign up
+            Create Account
           </Link>
         </p>
       </div>

@@ -6,6 +6,7 @@ import {
 } from "@/components/ui/breadcrumb";
 import Image from "next/image";
 import { FaHome } from "react-icons/fa";
+import CollegeImageCarousel from "../../_components/ItemGallary";
 
 export default function CollegeDetails() {
   return (
@@ -82,9 +83,9 @@ export default function CollegeDetails() {
         </BreadcrumbList>
       </div>
 
-      <div className="w-full flex flex-col md:flex-row gap-5 px-7 md:px-30 py-10">
+      <div className="w-full flex flex-col lg:flex-row gap-5 px-7 md:px-30 py-10">
         <div
-          className="w-full md:w-2/3 flex flex-col gap-5 "
+          className="w-full lg:w-2/3 flex flex-col gap-5 "
           id="college-details"
         >
           <h1 className="text-3xl font-bold">About</h1>
@@ -210,9 +211,21 @@ export default function CollegeDetails() {
               <li>Environmental Studies</li>
             </ul>
           </div>
+
+          {/* Add Image Gallary */}
+
+          <div className="w-full max-w-2xl  mt-10">
+            <h1 className="text-3xl font-bold">Campus Image Gallary</h1>
+            <p className="text-md tracking-wide mt-1">
+              Explore the campus through our image gallery. Use the arrows to
+              navigate.
+            </p>
+
+            <CollegeImageCarousel />
+          </div>
         </div>
 
-        <div className="w-full md:w-1/3 flex flex-col gap-5 " id="college-loc">
+        <div className="w-full lg:w-1/3 flex flex-col gap-5 " id="college-loc">
           <h1 className="text-3xl font-bold">Admission Office</h1>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.05057996436!2d-74.30916407513153!3d40.69719335489713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1746792758546!5m2!1sen!2sin"
@@ -268,20 +281,49 @@ export default function CollegeDetails() {
             </p>
           </div>
 
-            <div className="flex flex-col gap-2 mt-3">
-               <h1 className="text-xl font-bold">Social Media</h1>
-               <p className="text-md tracking-wide">
-               for more information about the college, visit the websites
-               </p>
-               <p className="text-md tracking-wide">
-               <a href="https://www.adelphi.edu" className="text-blue-700">
-                  {" "}
-                  admissions.adelphi.edu/first-year/
-               </a>
+          <div className="flex flex-col gap-2 mt-3">
+            <h1 className="text-xl font-bold">Social Media</h1>
+            <p className="text-md tracking-wide">
+              for more information about the college, visit the websites
+            </p>
+            <p className="text-md tracking-wide">
+              <a href="https://www.adelphi.edu" className="text-blue-700">
+                {" "}
+                admissions.adelphi.edu/first-year/
+              </a>
               <br />
-               stop by for a tour of our beautiful 75-acre campus. Join us for our fall or spring open house. Sit in on a class. Explore Garden City. The choice is yours. Find out more at http://adelphi.edu/visit. We can’t wait to meet you!
-               </p>
-               </div>
+              stop by for a tour of our beautiful 75-acre campus. Join us for
+              our fall or spring open house. Sit in on a class. Explore Garden
+              City. The choice is yours. Find out more at
+              http://adelphi.edu/visit. We can’t wait to meet you!
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-2 mt-3">
+            <h1 className="text-xl font-bold">relevent videos </h1>
+            <p className="text-md tracking-wide">
+              for more information about the college, visit this video link
+            </p>
+            <p className="text-md tracking-wide">
+              <a href="https://www.adelphi.edu" className="text-blue-700">
+                {" "}
+                admissions.adelphi.edu/first-year/
+              </a>
+              <br />
+              stop by for a tour of our beautiful 75-acre campus. Join us for
+              our fall or spring open house. Sit in on a class. Explore Garden
+              City. The choice is yours. Find out more at
+              http://adelphi.edu/visit. We can&apos;t wait to meet you!
+            </p>
+          </div>
+
+          <div className="mt-10 w-full">
+            <img
+              src="/adelphi-logo.png"
+              alt="College name photo"
+              className=" object-cover rounded-2xl mt-5"
+            />
+          </div>
         </div>
       </div>
     </section>

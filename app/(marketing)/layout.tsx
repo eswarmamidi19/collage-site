@@ -6,9 +6,9 @@ type MarketingLayoutProps = {
 
 export default function MarketingLayout({children} : MarketingLayoutProps) {
   return (
-    <div className="h-full bg-slate-100"> 
+    <div className="h-screen flex flex-col justify-between items-center bg-slate-100"> 
      <Navbar />
-     <main className="bg-slate-100 pt-40 pb-20 md:pb-32">{children}</main>
+     <main className="bg-slate-100 h-full ">{children}</main>
     </div>
   );
 }

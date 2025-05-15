@@ -69,7 +69,7 @@ export default function ListCard({ college }: ListCardProps) {
         <p className="text-gray-600 mt-1 line-clamp-2 text-[11px]">{college.description}</p>
         <Link
           href={`/colleges/${convertToKey(college.name)}`}
-          className="block mt-2 text-center text-white bg-black text-xs py-1 rounded hover:bg-gray-800"
+          className="block mt-2 text-center text-white bg-blue-700 text-xs py-2 rounded hover:bg-gray-800"
         >
           View Details
         </Link>

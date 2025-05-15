@@ -6,7 +6,7 @@ import { UserPlus } from "lucide-react";
 
 export default function CreateAccountPage() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-50 to-white px-4">
+    <div className="min-h-screen flex items-center justify-center ">
       <div className="w-full max-w-md bg-white p-8 rounded-2xl shadow-xl">
         <div className="flex flex-col items-center mb-6">
           <div className="bg-indigo-100 text-indigo-600 rounded-full p-3 mb-4">

@@ -19,7 +19,7 @@ export function Navbar() {
     { href: "/about", label: "About Us" },
     { href: "/contact", label: "Contact Us" },
     { href: "/terms", label: "Terms & Conditions" },
-  ]
+  ];
 
   return (
     <div className="fixed top-0 w-full h-14 px-4 border-b shadow-sm bg-white flex items-center z-50">
