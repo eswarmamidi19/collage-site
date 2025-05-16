@@ -70,7 +70,6 @@ export default function CollegeListPage() {
         {/* Desktop Filters */}
         <aside className="hidden lg:flex flex-col col-span-1 bg-white p-4 rounded shadow max-h-[80vh]">
           <h2 className="text-base font-semibold mb-4">Filter Colleges</h2>
-          {/* Make accordion scrollable and leave space for button */}
           <div className="flex-grow overflow-auto pr-2">
             <Accordion type="multiple" className="animate-none">
               {filterData.map((filter) => {
@@ -147,12 +146,17 @@ export default function CollegeListPage() {
             </Accordion>
           </div>
 
-          {/* Apply Filters Button Desktop */}
+          {/* Apply + Clear Filters (Desktop) */}
           <button
             onClick={applyFilters}
             className="mt-4 bg-black text-white py-2 rounded-md font-semibold text-sm shadow-sm hover:bg-gray-900"
           >
             Apply Filters
+          </button>
+          <button
+            className="mt-2 text-sm text-red-600 hover:text-red-800 underline"
+          >
+            Clear Filters
           </button>
         </aside>
 
@@ -164,7 +168,6 @@ export default function CollegeListPage() {
               placeholder="Search colleges..."
               className="w-full sm:w-1/2 p-2 border border-gray-300 rounded text-xs"
             />
-
             <select className="w-full sm:w-1/4 p-2 border border-gray-300 rounded text-xs">
               <option value="">Sort by</option>
               <option value="name">Name</option>
@@ -286,9 +289,14 @@ export default function CollegeListPage() {
         <div className="border-t border-gray-300 p-4">
           <button
             onClick={applyFilters}
-            className="w-full bg-black text-white py-3 rounded-md font-semibold text-base"
+            className="w-full bg-black text-white py-3 rounded-md font-semibold text-base mb-3"
           >
             Apply Filters
+          </button>
+          <button
+            className="w-full text-red-600 underline text-sm"
+          >
+            Clear Filters
           </button>
         </div>
       </div>

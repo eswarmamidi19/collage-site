@@ -39,7 +39,7 @@ export default function CreateAccountPage() {
 
 
           <Button type="submit" className="w-full mt-2">
-            Sign Up
+              Create Account
           </Button>
         </form>
 

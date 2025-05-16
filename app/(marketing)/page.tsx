@@ -40,14 +40,20 @@ export default function Home() {
       </div>
 
       {/* Action Buttons */}
-      <div className="flex gap-4 mb-6">
-        <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full text-sm lg:text-base font-medium shadow">
-          Search
-        </button>
-        <Link className="bg-white border border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-full text-sm lg:text-base font-medium shadow" href={"/college-list"} >
-          View All Colleges
-        </Link>
-      </div>
+      <div className="flex flex-col lg:flex-row gap-4 mb-6">
+  <Link
+    className="w-48 text-center bg-white border border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-full text-sm lg:text-base font-medium shadow"
+    href="/college-list"
+  >
+    View All Colleges
+  </Link>
+  <button
+    className="w-48 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full text-sm lg:text-base font-medium shadow"
+  >
+    Search
+  </button>
+</div>
+
     </div>
   );
 }

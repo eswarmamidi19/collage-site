@@ -57,23 +57,21 @@ const convertToKey = (title: string) =>
 
 export default function ListCard({ college }: ListCardProps) {
   return (
-    <div className="bg-white rounded-sm border border-gray-200 overflow-hidden shadow-sm transition hover:shadow-md flex flex-col">
-      <img
-        src={colleges[0].gallery[0].image}
-        alt={college.name}
-        className="w-full h-36 object-cover"
-      />
-      <div className="p-2 text-xs">
-        <h3 className="font-semibold text-gray-800 truncate">{college.name}</h3>
-        <p className="text-gray-500 truncate">{college.address}</p>
-        <p className="text-gray-600 mt-1 line-clamp-2 text-[11px]">{college.description}</p>
-        <Link
-          href={`/colleges/${convertToKey(college.name)}`}
-          className="block mt-2 text-center text-white bg-blue-700 text-xs py-2 rounded hover:bg-gray-800"
-        >
-          View Details
-        </Link>
-      </div>
+   <Link href={`/colleges/${convertToKey(college.name)}`} className="block" >
+  <div className="bg-white rounded-sm border border-gray-200 overflow-hidden shadow-sm transition hover:shadow-md flex flex-col cursor-pointer">
+    <img
+      src={colleges[0].gallery[0].image}
+      alt={college.name}
+      className="w-full h-36 object-cover"
+    />
+    <div className="p-2 text-xs">
+      <h3 className="font-semibold text-gray-800 truncate">{college.name}</h3>
+      <p className="text-gray-500 truncate">{college.address}</p>
+      <p className="text-gray-600 mt-1 line-clamp-2 text-[11px]">{college.description}</p>
+      <span className="text-black">View Details &gt;&gt;&gt;</span>
     </div>
+  </div>
+</Link>
+    
   );
 }
