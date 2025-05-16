@@ -1,0 +1,5 @@
+https://ui.shadcn.com/docs/components/accordion - Accordion - [in colleges-list filters]
+https://ui.shadcn.com/docs/components/button - Buttons in navbar(login and create Account)
+https://ui.shadcn.com/docs/components/card - Cards in colleges-List
+https://ui.shadcn.com/docs/components/carousel - carousel in image Gallary
+https://lucide.dev/guide/packages/lucide-react - all icons from website came from here
